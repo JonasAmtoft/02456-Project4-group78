@@ -1,0 +1,10 @@
+pooling_type: 'mean' # mean | cls | max
+emb_dim: 512
+hidden_dim: 64
+n_heads: 8
+n_layers: 4
+feed_forward_dim: 2048
+dropout: 0.1
+
+query_encoder_weights_path: "checkpoints/query_encoder.pt"
+document_encoder_weights_path: "checkpoints/document_encoder.pt"

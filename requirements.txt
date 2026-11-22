@@ -1,0 +1,8 @@
+hydra-core>=1.4.0rc3
+transformers
+torch
+datasets
+scipy
+numpy
+matplotlib
+.

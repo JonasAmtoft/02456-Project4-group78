@@ -1,0 +1,21 @@
+defaults:
+  - _self_  # Hydra magic
+  - dataset: fiqa
+  - model: bert_small
+
+
+device: cpu   # cpu | cuda
+base_path: "."
+
+training:
+  lr: 2e-5
+  num_epochs: 5
+  batch_size: 64
+  max_query_len: 64     # same as in dpr.py
+  max_doc_len: 256      # same as in dpr.py
+  checkpoint_dir: "checkpoints/bert_small"
+  weight_decay: 0.01
+
+hydra:
+  run:
+    dir: "outputs/train_bert/"

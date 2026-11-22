@@ -1,0 +1,2 @@
+method: "dpr_bert"
+index_path: "checkpoints/bert_small/document_embeddings.pt"
