@@ -9,7 +9,7 @@ base_path: "."
 
 training:
   lr: 3e-4
-  num_epochs: 25
+  num_epochs: 20
   batch_size: 64
   max_query_len: 64     # same as in dpr.py
   max_doc_len: 256      # same as in dpr.py

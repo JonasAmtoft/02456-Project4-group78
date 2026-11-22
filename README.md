@@ -41,9 +41,11 @@ python visualize_attention.py --dataset squad --example 0
 All experiments were run on both FiQA and SQuAD:
 
 - TF-IDF and BM25 with `main.py`.
-- Baseline DPR: `train.py training.num_epochs=15` with the default model in `config/model/encoder.yaml`.
-- DPR from BERT-Small: `train_bert.py` with the defaults in `config/train_bert.yaml` (5 epochs).
-- Pooling: `train_bert.py` with `model.pooling_type=cls`, `mean` and `max`. On FiQA, max pooling was also trained for 20 epochs.
+- Baseline DPR: `train.py` with the defaults in `config/train_dpr.yaml`.
+- DPR from BERT-Small: `train_bert.py` with the defaults in `config/train_bert.yaml`.
+- Pooling: `train_bert.py` with `model.pooling_type=cls`, `mean` and `max`.
+
+The baseline is trained for 20 epochs and DPR from BERT-Small for 10 epochs. The checkpoint with the best validation in-batch accuracy is kept.
 
 ## Structure
 
